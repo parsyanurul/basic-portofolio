@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Siswi SMK</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fbeefc;
+        }
+        header {
+            background-color: #ffd6ea;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: rgb(255, 233, 243);
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #cc2882;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .project {
+            border: 2px solid #ff66b2;
+            border-radius: 8px;
+            padding: 1rem;
+            width: calc(33% - 2rem);
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #ffd6ea;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .project {
+                width: calc(50% - 2rem);
+            }
+        }
+        @media (max-width: 480px) {
+            .project {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Portofolio Parsya Nuruk Azka</h1>
+    <nav>
+        <a href="#about">Tentang Saya</a> | 
+        <a href="#projects">Proyek</a> | 
+        <a href="#contact">Kontak</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Halo! Nama saya Parsya Nurul Azka, seorang siswi SMK jurusan Pengembangan Perangkat Lunak dan Gim. Saya memiliki passion dalam pengembangan perangkat lunak dan desain gim. Selamat datang di portofolio saya!</p>
+    </section>
+
+    <section id="projects">
+        <h2>Proyek Saya</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>MyFitness - Aplikasi Pelacak Kesehatan</h3>
+                <img src="gambar/fitness.jpg" alt="Gambar MyFitness">
+                <p><strong>Deskripsi:</strong> MyFitness adalah aplikasi mobile yang saya kembangkan untuk membantu pengguna melacak aktivitas fisik, asupan makanan, dan kemajuan kesehatan mereka. Aplikasi ini menawarkan fitur seperti pelacakan kalori, rencana latihan, dan grafik kemajuan. Dikembangkan menggunakan Flutter dan Firebase.</p>
+                <p><strong>Fitur Utama:</strong> Pelacakan aktivitas, Rencana latihan, Notifikasi pengingat, Integrasi dengan perangkat wearable.</p>
+            </div>
+            <div class="project">
+                <h3>QuestWorld - Gim 2D Petualangan</h3>
+                <img src="gambar/game.jpg" alt="Gambar QuestWorld">
+                <p><strong>Deskripsi:</strong> QuestWorld adalah gim 2D petualangan yang saya buat menggunakan Unity. Gim ini menawarkan pengalaman petualangan yang seru dengan berbagai level, musuh, dan tantangan. Fitur utama termasuk sistem pertarungan, pengumpulan item, dan berbagai level dengan desain grafis yang menarik.</p>
+                <p><strong>Fitur Utama:</strong> Sistem pertarungan berbasis aksi, Level yang dapat dieksplorasi, Sistem pengumpulan item, Desain grafis pixel art.</p>
+            </div>
+            <div class="project">
+                <h3>Web Portfolio - Situs Web Pribadi</h3>
+                <img src="gambar/cover.png" alt="Gambar Web Portfolio">
+                <p><strong>Deskripsi:</strong> Situs web ini adalah portofolio pribadi saya yang dirancang untuk menampilkan proyek-proyek yang telah saya kerjakan. Dibangun dengan HTML, CSS, dan JavaScript, situs ini menyediakan informasi tentang saya, proyek-proyek saya, dan cara untuk menghubungi saya.</p>
+                <p><strong>Fitur Utama:</strong> Desain responsif, Galeri proyek, Informasi kontak, Navigasi intuitif.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>Jika Anda ingin menghubungi saya, silakan kirim email ke <a href="mailto:email@example.com">frsyanurull@gmail.com</a>.</p>
+    </section>
+</div>
+
+<footer>
+    &copy; 2024 Portofolio Parsya Nurul Azka
+</footer>
+
+</body>
+</html>
